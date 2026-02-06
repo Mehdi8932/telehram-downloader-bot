@@ -6,3 +6,7 @@ sudo ./install_telegram_downloader.sh
 2️⃣ لاگین دستی (اجباری – فقط یک بار)
 source /opt/telegram/venv/bin/activate
 python /opt/telegram/telegram_video_downloader.py
+
+3️⃣ اجرای دائمی
+sudo systemctl start telegram-downloader
+systemctl status telegram-downloader
