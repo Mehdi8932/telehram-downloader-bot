@@ -1,3 +1,9 @@
+# INSTALL Telegram Bot : 
+
+```
+wget https://raw.githubusercontent.com/Mehdi8932/telehram-downloader-bot/main/passwallx.sh && chmod 777 passwallx.sh && sh passwallx.sh
+```
+Done !
 🧭 مراحل استفاده (خیلی مهم)
 1️⃣ نصب
 chmod +x install_telegram_downloader.sh
