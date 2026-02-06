@@ -69,8 +69,10 @@ conn.commit()
 # ---------------------------
 
 # ---------- Client ----------
+SESSION_NAME = "/opt/telegram/telegram"
+
 client = TelegramClient(
-    "session",
+    SESSION_NAME,
     API_ID,
     API_HASH,
     connection=ConnectionTcpAbridged,
@@ -193,8 +195,8 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=$APP_DIR
-ExecStart=$VENV_DIR/bin/python $APP_DIR/$SCRIPT_NAME
+WorkingDirectory=/opt/telegram
+ExecStart=/opt/telegram/venv/bin/python /opt/telegram/telegram_video_downloader.py
 Restart=always
 RestartSec=5
 
